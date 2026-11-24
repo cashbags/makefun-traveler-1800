@@ -12,19 +12,18 @@ library 131, post office 99, letter 93, ink 41. The judge brief's own
 examples (road / post office / library) are the most flooded lane on the
 board — following them means fighting 150 near-identical entries in
 pairwise games. Coffeehouse: 0 titles. Almanac: 0. Bell: 0.
-A coffeehouse is genuinely 1800-known (London coffeehouses from the 1650s:
-news read aloud, letters written, gossip traded), and it carries the two
-things the internet is — the world's writings at hand, and anyone in the
-world answering back — in one room the traveler can picture. The almanac
-lane was the runner-up; it explains knowledge well but not conversation.
+A coffeehouse is genuinely 1800-known (London coffeehouses from the 1650s),
+and it carries the two things the internet is — the world's writings at
+hand, and anyone in the world answering back — in one room the traveler can
+picture. The almanac lane was the runner-up; it explains knowledge well but
+not conversation.
 
 ## 1800 word audit (every noun/verb in the entry)
 
 coffeehouse (1650s), newspaper (1670s), letter, world, ask, hear, answer,
-at once — all in use before 1800. Deliberately avoided: wire, telegraph
-(1830s), lightning, glass hall, village square, "before the ink dries",
-"before your tea cools" (all flooded), "instant" (modern ring to a judge),
-any list of features. "Hear the world answer" is the memorable phrase;
+at once — all pre-1800. Avoided: wire, telegraph (1830s), lightning, glass
+hall, village square, "before the ink dries", "before your tea cools" (all
+flooded), "instant", any list of features. "Hear the world answer" is the memorable phrase;
 "may ask anything" states a capability, not a guaranteed reply, so the
 sentence stays literally true as a comparison.
 
@@ -67,11 +66,11 @@ question you put to it." (139)
 - R1 C3 vs C10: C3 wins. Criterion 4 — C10 lists three items (news, books,
   letters); C3 says the same in two.
 - R1 C4 vs C9: C4 wins. Criterion 1 — C4 covers reading, speaking, writing;
-  C9 only asking and reading, and its "is answered" overpromises.
+  C9 covers less, and its "is answered" overpromises.
 - R1 C5 vs C8: C8 wins. Criterion 1 — C5 explains messaging only; C8 also
   covers newspapers and voices, the knowledge side.
 - R1 C6 vs C7: C6 wins. Criterion 1 — "ask anything, hear the world
-  answer" carries the two-way internet; the almanac leans one-way reference.
+  answer" is the two-way internet; the almanac is one-way reference.
 - R2 C2 vs C3: C2 wins. Criterion 3 — C3's "answering any question" implies
   every question gets an answer; C2 stays a hedged capability.
 - R2 C4 vs C8: C8 wins. Criterion 4 — C4 is a three-verb list; C8 is one
@@ -85,6 +84,6 @@ question you put to it." (139)
 
 ## Program
 
-`main.py` holds the sentence as one constant, checks 1–200 chars, and
-writes `/output/entry.txt` with no trailing newline. No clock, no random,
-no network, no input: two runs are byte-identical by construction.
+`main.py` holds the sentence as one constant, checks 1–200 chars and one
+sentence, and writes `/output/entry.txt` with no trailing newline; no clock,
+random, network or input, so two runs are byte-identical.
