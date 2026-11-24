@@ -15,6 +15,8 @@ def main():
         raise SystemExit("entry length %d outside 1-200" % len(text))
     if not text.strip():
         raise SystemExit("entry is blank")
+    if text.count(".") != 1 or not text.endswith("."):
+        raise SystemExit("entry must be exactly one sentence")
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8", newline="") as f:
         f.write(text)
